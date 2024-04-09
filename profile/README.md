@@ -1,27 +1,27 @@
-## Introdução
+## Introduction
 
-Este projeto visa compartilhar conhecimento ao simular o desenvolvimento de um sistema de "newsletters", cuja função é atualizar os inscritos ou clientes por meio de diferentes canais de comunicação, sendo o e-mail o mais comum.
+This project aims to share knowledge by simulating the development of a "newsletters" system, which is responsible for updating subscribers or customers through various communication channels, with email being the most common.
 
-## Arquitetura
+## Architecture
 
-Optamos pela arquitetura de micro-serviços devido às suas qualidades amplamente reconhecidas, tais como escalabilidade, descentralização e facilidade de manutenção.
+We opted for the microservices architecture due to its widely recognized qualities such as scalability, decentralization, and ease of maintenance.
 
-### Micro-serviços
+### Microservices
 
-O sistema é composto por 4 micro-serviços:
+The system consists of 4 microservices:
 
-- [auth-microsservice](https://github.com/Article-Newsletter-Organization/auth-microsservice)
-- [author-microsservice](https://github.com/Article-Newsletter-Organization/author-microsservice)
-- [newsletter-microsservice](https://github.com/Article-Newsletter-Organization/newsletter-microsservice)
-- [article-microsservice](https://github.com/Article-Newsletter-Organization/article-microsservice)
+- [auth-microservice](https://github.com/Article-Newsletter-Organization/auth-microservice)
+- [author-microservice](https://github.com/Article-Newsletter-Organization/author-microservice)
+- [newsletter-microservice](https://github.com/Article-Newsletter-Organization/newsletter-microservice)
+- [article-microservice](https://github.com/Article-Newsletter-Organization/article-microservice)
 
 ### API Gateway
 
-Desenvolvemos nossa própria API Gateway, que serve como ponto de entrada para o sistema.
+We developed our own API Gateway, which serves as the entry point for the system.
 
-## Infraestrutura
+## Infrastructure
 
-Utilizamos o Google Cloud Platform (GCP) para fornecer os recursos computacionais e serviços necessários, incluindo:
+We used the Google Cloud Platform (GCP) to provide the necessary computing resources and services, including:
 
 - GKE (Google Kubernetes Engine)
 - Cloud SQL
@@ -30,10 +30,10 @@ Utilizamos o Google Cloud Platform (GCP) para fornecer os recursos computacionai
 - Cloud Storage
 - KMS (Key Management Service)
 
-Para obter mais informações sobre como a infraestrutura foi configurada, consulte o repositório: [terraform-gcp-infra](https://github.com/Article-Newsletter-Organization/terraform-gcp-infra)
+For more information on how the infrastructure was set up, please visit the repository: [terraform-gcp-infra](https://github.com/Article-Newsletter-Organization/terraform-gcp-infra)
 
 ### Kubernetes
 
-Implementamos o Kubernetes como uma peça fundamental para o controle de recursos, escalabilidade e organização do sistema.
+We implemented Kubernetes as a key component for resource control, scalability, and organization of the system.
 
-Para mais detalhes sobre a configuração do Kubernetes, consulte o repositório: [ansible-k8s-config](https://github.com/Article-Newsletter-Organization/ansible-k8s-config)
+For more details on how the Kubernetes structure was set up, please visit the repository: [ansible-k8s-config](https://github.com/Article-Newsletter-Organization/ansible-k8s-config)
